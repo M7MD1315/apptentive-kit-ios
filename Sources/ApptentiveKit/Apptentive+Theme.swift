@@ -45,7 +45,7 @@ extension Apptentive {
             let rangeNotSelectedSegmentBackground = UIColor(named: "rangeNotSelectedSegmentBackground", in: bundle, compatibleWith: nil),
             let disclaimerColor = UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
 //              Trying image
-            let apptentiveRadioButton = UIImage(named: "circle", in: bundle, compatibleWith: nil)
+            let apptentiveRadioButton = UIImage(named: "smallcircle.fill.circle.fill", in: bundle, compatibleWith: nil)
                 
         else {
             apptentiveCriticalError("Unable to locate color asset(s).")
@@ -87,7 +87,7 @@ extension Apptentive {
             toolBarAppearanceProxy.scrollEdgeAppearance = toolBarAppearanceProxy.standardAppearance
         }
 
-        UIToolbar.apptentiveMode = .alwaysShown
+//        UIToolbar.apptentiveMode = .alwaysShown
 
         let buttonTitleTextAttributes = [NSAttributedString.Key.foregroundColor: barForegroundColor, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
 
@@ -108,6 +108,7 @@ extension Apptentive {
         UITableView.Style.apptentive = .grouped
         
         UIImage.apptentiveRadioButton = apptentiveRadioButton
+        
         UIColor.apptentiveInstructionsLabel = instructionsLabelColor
 //        UIColor.apptentiveImageNotSelected = imageNotSelectedColor
         UIColor.apptentiveTextInputBorder = textInputBorderColor
