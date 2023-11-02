@@ -216,7 +216,7 @@ extension Apptentive {
             let dialogButtonText = UIColor(named: "dialogButtonText", in: bundle, compatibleWith: nil),
             let unselectedSurveyIndicatorColor = UIColor(named: "unselectedSurveyIndicator", in: bundle, compatibleWith: nil),
             let surveyGreeting = UIColor(named: "surveyGreetingText", in: bundle, compatibleWith: nil),
-            let surveyImageChoice = UIColor(named: "surveyImageChoice", in: bundle, compatibleWith: nil),
+            let surveyImageChoice = UIColor(named: "circle", in: bundle, compatibleWith: nil),
             let attachmentDeleteButton = UIColor(named: "attachmentDeleteButton", in: bundle, compatibleWith: nil),
             let error = UIColor(named: "apptentiveError", in: bundle, compatibleWith: nil),
             let textInputPlaceholder = UIColor(named: "textInputPlaceholder", in: bundle, compatibleWith: nil),
