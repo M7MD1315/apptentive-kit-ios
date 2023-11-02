@@ -196,7 +196,6 @@ extension Apptentive {
         let bundle = Bundle.apptentive
         guard let barTintColor =                    UIColor(named: "barTint", in: bundle, compatibleWith: nil),
             let barForegroundColor =                UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
-//            let buttonTintColor =                   UIColor(named: "buttonTint", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder =      UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
             let textInputBorderColor =              UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
             let textInputColor =                    UIColor(named: "textInput", in: bundle, compatibleWith: nil),
@@ -301,14 +300,16 @@ extension Apptentive {
         UIColor.apptentiveSecondaryGroupedBackground = apptentiveGroupSecondaryColor
         UIColor.apptentiveSeparator = apptentiveGroupPrimaryColor
         UIColor.apptentiveTextInputBackground = textInputBackgroundColor
+        // Changed to batelco red
         UIColor.apptentiveSubmitButton = .appRed
+        
         UIColor.apptentiveQuestionLabel = question
         UIColor.apptentiveMessageBubbleInbound = messageBubbleInboundColor
         UIColor.apptentiveMessageBubbleOutbound = messageBubbleOutboundColor
         UIColor.apptentiveMessageLabelOutbound = termsOfServiceColor
         UIColor.apptentiveMessageLabelInbound = messageLabelInboundColor
         UIColor.apptentiveMessageCenterTextInputBorder = messageTextInputBorderColor
-//        UIColor.apptentiveSelectedSurveyIndicatorSegment = buttonTintColor
+        // UIColor.apptentiveSelectedSurveyIndicatorSegment = buttonTintColor
         UIColor.apptentiveUnselectedSurveyIndicatorSegment = unselectedSurveyIndicatorColor
         UIColor.apptentiveBranchedSurveyFooter = barTintColor
         UIColor.apptentiveSurveyIntroduction = surveyGreeting
