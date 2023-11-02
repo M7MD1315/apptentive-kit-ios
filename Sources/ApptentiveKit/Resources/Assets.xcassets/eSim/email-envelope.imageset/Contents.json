@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "email_envelope.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
