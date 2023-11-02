@@ -36,7 +36,7 @@ public class Apptentive: NSObject, EnvironmentDelegate, InteractionDelegate, Mes
     /// The theme to apply to Apptentive UI.
     ///
     /// This property must be set before calling `register(credentials:)`.
-    public var theme: UITheme = .apptentive
+    public var theme: UITheme = .batelco
 
     /// The name of the person using the app, if available.
     @objc public var personName: String? {
@@ -211,6 +211,9 @@ public class Apptentive: NSObject, EnvironmentDelegate, InteractionDelegate, Mes
 
         /// iOS default look and feel.
         case none
+        
+        /// BATELCO look and feel
+        case batelco
     }
 
     /// Provides the SDK with the credentials necessary to connect to the Apptentive API.
@@ -223,7 +226,12 @@ public class Apptentive: NSObject, EnvironmentDelegate, InteractionDelegate, Mes
             DispatchQueue.main.async {
                 self.applyApptentiveTheme()
             }
-        } else {
+        } else if case .batelco = theme {
+            ApptentiveLogger.interaction.info("Using Batelco theme for interaction UI.")
+            DispatchQueue.main.async {
+                self.applyBatelcoTheme()
+            }
+        }else {
             self.environment.isOverridingStyles = true
         }
 
