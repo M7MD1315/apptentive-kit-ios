@@ -42,7 +42,7 @@ class SurveyOtherChoiceCell: SurveyChoiceCell {
             self.imageView?.tintColor = .apptentiveImageSelected
             self.accessibilityTraits.insert(UIAccessibilityTraits.selected)
         } else {
-            self.imageView?.tintColor = .apptentiveImageNotSelected
+//            self.imageView?.tintColor = .apptentiveImageNotSelected
             self.accessibilityTraits.remove(UIAccessibilityTraits.selected)
         }
     }

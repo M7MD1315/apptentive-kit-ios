@@ -37,7 +37,7 @@ class SurveyChoiceCell: UITableViewCell {
             self.buttonImageView.tintColor = .apptentiveImageSelected
             self.accessibilityTraits.insert(UIAccessibilityTraits.selected)
         } else {
-            self.buttonImageView.tintColor = .apptentiveImageNotSelected
+//            self.buttonImageView.tintColor = .apptentiveImageNotSelected
             self.accessibilityTraits.remove(UIAccessibilityTraits.selected)
         }
     }

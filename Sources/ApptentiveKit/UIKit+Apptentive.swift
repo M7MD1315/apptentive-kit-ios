@@ -397,9 +397,9 @@ extension UIColor {
     }()
 
     /// The color to use for images in a non-selected state for surveys.
-    @objc public static var apptentiveImageNotSelected: UIColor = {
-        return .apptentiveTint
-    }()
+//    @objc public static var apptentiveImageNotSelected: UIColor = {
+//        return .apptentiveTint
+//    }()
 
     /// The background color to use for the submit button on surveys.
     @objc public static var apptentiveSubmitButton: UIColor = {
