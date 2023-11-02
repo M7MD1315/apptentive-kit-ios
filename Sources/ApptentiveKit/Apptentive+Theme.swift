@@ -18,7 +18,7 @@ extension Apptentive {
             let barForegroundColor = UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
             let buttonTintColor = UIColor(named: "buttonTint", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder = UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
-            let imageNotSelectedColor = UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
+//            let imageNotSelectedColor = UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
             let textInputBorderColor = UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
             let textInputColor = UIColor(named: "textInput", in: bundle, compatibleWith: nil),
             let instructionsLabelColor = UIColor(named: "instructionsLabel", in: bundle, compatibleWith: nil),
@@ -44,7 +44,9 @@ extension Apptentive {
             let textInputBorderSelected = UIColor(named: "textInputBorderSelected", in: bundle, compatibleWith: nil),
             let rangeNotSelectedSegmentBackground = UIColor(named: "rangeNotSelectedSegmentBackground", in: bundle, compatibleWith: nil),
             let disclaimerColor = UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
-            let radioButtonSelected = UIImage(named: "circle")
+//              Trying image
+            let apptentiveRadioButton = UIImage(named: "circle", in: bundle, compatibleWith: nil)
+                
         else {
             apptentiveCriticalError("Unable to locate color asset(s).")
             return
@@ -104,9 +106,10 @@ extension Apptentive {
 
         // Apptentive UIKit extensions overrides
         UITableView.Style.apptentive = .grouped
-
+        
+        UIImage.apptentiveRadioButton = apptentiveRadioButton
         UIColor.apptentiveInstructionsLabel = instructionsLabelColor
-        UIColor.apptentiveImageNotSelected = imageNotSelectedColor
+//        UIColor.apptentiveImageNotSelected = imageNotSelectedColor
         UIColor.apptentiveTextInputBorder = textInputBorderColor
         UIColor.apptentiveTextInput = textInputColor
         UIColor.apptentiveChoiceLabel = choiceLabelColor
@@ -140,8 +143,6 @@ extension Apptentive {
         UIColor.apptentiveMessageCenterTextInputPlaceholder = textInputPlaceholder
         UIColor.apptentiveTextInputBorderSelected = textInputBorderSelected
         UIColor.apptentiveDisclaimerLabel = disclaimerColor
-        
-        UIImage.apptentiveRadioButtonSelected = radioButtonSelected
 
         UIColor.apptentiveRangeControlBorder = apptentiveRangeControlBorder
 
