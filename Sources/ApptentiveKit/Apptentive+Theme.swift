@@ -18,7 +18,7 @@ extension Apptentive {
             let barForegroundColor = UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
             let buttonTintColor = UIColor(named: "buttonTint", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder = UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
-            let imageNotSelectedColor = UIColor(named: "circle", in: bundle, compatibleWith: nil),
+            let imageNotSelectedColor = UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
             let textInputBorderColor = UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
             let textInputColor = UIColor(named: "textInput", in: bundle, compatibleWith: nil),
             let instructionsLabelColor = UIColor(named: "instructionsLabel", in: bundle, compatibleWith: nil),

@@ -34,10 +34,10 @@ class SurveyChoiceCell: UITableViewCell {
 
         self.buttonImageView.isHighlighted = selected
         if self.isSelected {
-            self.buttonImageView.tintColor = .apptentiveImageSelected
+            self.buttonImageView.tintColor = .appGreen
             self.accessibilityTraits.insert(UIAccessibilityTraits.selected)
         } else {
-            self.buttonImageView.tintColor = .apptentiveImageNotSelected
+            self.buttonImageView.tintColor = .appRed
             self.accessibilityTraits.remove(UIAccessibilityTraits.selected)
         }
     }
