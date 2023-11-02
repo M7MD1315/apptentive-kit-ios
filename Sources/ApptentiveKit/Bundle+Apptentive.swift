@@ -14,6 +14,7 @@ import Foundation
 extension Bundle {
     #if SWIFT_PACKAGE
         static let apptentive = Bundle.module
+        static let batelco = Bundle.module
     #else
         #if COCOAPODS
             // The SDK was integrated using CocoaPods. Look for a resource bundle nested in:

@@ -211,6 +211,9 @@ public class Apptentive: NSObject, EnvironmentDelegate, InteractionDelegate, Mes
 
         /// iOS default look and feel.
         case none
+        
+        /// Batelco look and feel
+        case batelco
     }
 
     /// Provides the SDK with the credentials necessary to connect to the Apptentive API.
@@ -223,7 +226,13 @@ public class Apptentive: NSObject, EnvironmentDelegate, InteractionDelegate, Mes
             DispatchQueue.main.async {
                 self.applyApptentiveTheme()
             }
-        } else {
+        } else if case .batelco = self.theme
+        {
+            ApptentiveLogger.interaction.info("Using Batelco theme for interaction UI.")
+            DispatchQueue.main.async {
+                self.applyBatelcoTheme()
+            }
+        }else {
             self.environment.isOverridingStyles = true
         }
 
