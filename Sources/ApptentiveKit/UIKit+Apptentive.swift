@@ -403,7 +403,7 @@ extension UIColor {
 
     /// The background color to use for the submit button on surveys.
     @objc public static var apptentiveSubmitButton: UIColor = {
-        return .apptentiveTint
+        return .appRed
     }()
 
     /// The background color to use for the footer which contains the terms and conditions for branched surveys.
