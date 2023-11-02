@@ -125,7 +125,7 @@ extension UIImage {
 
     /// The image to use next to a radio button question choice.
     @objc public static var apptentiveRadioButton: UIImage? = {
-        return apptentiveImage(named: "smallcircle.fill.circle.fill")
+        return apptentiveImage(named: "circle")
     }()
 
     /// The image to use next to a checkbox question choice.

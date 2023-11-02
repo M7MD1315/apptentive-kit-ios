@@ -14,38 +14,40 @@ extension Apptentive {
         // UIAppearance-based overrides
 
         let bundle = Bundle.apptentive
-        guard let barTintColor = UIColor(named: "barTint", in: bundle, compatibleWith: nil),
-            let barForegroundColor = UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
-            let buttonTintColor = UIColor(named: "buttonTint", in: bundle, compatibleWith: nil),
-            let apptentiveRangeControlBorder = UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
-//            let imageNotSelectedColor = UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
-            let textInputBorderColor = UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
-            let textInputColor = UIColor(named: "textInput", in: bundle, compatibleWith: nil),
-            let instructionsLabelColor = UIColor(named: "instructionsLabel", in: bundle, compatibleWith: nil),
-            let choiceLabelColor = UIColor(named: "choiceLabel", in: bundle, compatibleWith: nil),
-            let apptentiveGroupPrimaryColor = UIColor(named: "apptentiveGroupPrimary", in: bundle, compatibleWith: nil),
-            let apptentiveGroupSecondaryColor = UIColor(named: "apptentiveGroupSecondary", in: bundle, compatibleWith: nil),
-            let textInputBackgroundColor = UIColor(named: "textInputBackground", in: bundle, compatibleWith: nil),
-            let termsOfServiceColor = UIColor(named: "termsOfService", in: bundle, compatibleWith: nil),
-            let question = UIColor(named: "question", in: bundle, compatibleWith: nil),
-            let messageBubbleInboundColor = UIColor(named: "messageBubbleInbound", in: bundle, compatibleWith: nil),
-            let messageLabelInboundColor = UIColor(named: "messageLabelInbound", in: bundle, compatibleWith: nil),
-            let messageBubbleOutboundColor = UIColor(named: "messageBubbleOutbound", in: bundle, compatibleWith: nil),
-            let messageTextInputBorderColor = UIColor(named: "messageTextInputBorder", in: bundle, compatibleWith: nil),
-            let dialogSeparator = UIColor(named: "dialogSeparator", in: bundle, compatibleWith: nil),
-            let dialogText = UIColor(named: "dialogText", in: bundle, compatibleWith: nil),
-            let dialogButtonText = UIColor(named: "dialogButtonText", in: bundle, compatibleWith: nil),
-            let unselectedSurveyIndicatorColor = UIColor(named: "unselectedSurveyIndicator", in: bundle, compatibleWith: nil),
-            let surveyGreeting = UIColor(named: "surveyGreetingText", in: bundle, compatibleWith: nil),
-            let surveyImageChoice = UIColor(named: "surveyImageChoice", in: bundle, compatibleWith: nil),
-            let attachmentDeleteButton = UIColor(named: "attachmentDeleteButton", in: bundle, compatibleWith: nil),
-            let error = UIColor(named: "apptentiveError", in: bundle, compatibleWith: nil),
-            let textInputPlaceholder = UIColor(named: "textInputPlaceholder", in: bundle, compatibleWith: nil),
-            let textInputBorderSelected = UIColor(named: "textInputBorderSelected", in: bundle, compatibleWith: nil),
+        guard let barTintColor =                    UIColor(named: "barTint", in: bundle, compatibleWith: nil),
+            let barForegroundColor =                UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
+            let buttonTintColor =                   UIColor(named: "buttonTint", in: bundle, compatibleWith: nil),
+            let apptentiveRangeControlBorder =      UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
+//            let imageNotSelectedColor =           UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
+            let textInputBorderColor =              UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
+            let textInputColor =                    UIColor(named: "textInput", in: bundle, compatibleWith: nil),
+            let instructionsLabelColor =            UIColor(named: "instructionsLabel", in: bundle, compatibleWith: nil),
+            let choiceLabelColor =                  UIColor(named: "choiceLabel", in: bundle, compatibleWith: nil),
+            let apptentiveGroupPrimaryColor =       UIColor(named: "apptentiveGroupPrimary", in: bundle, compatibleWith: nil),
+            let apptentiveGroupSecondaryColor =     UIColor(named: "apptentiveGroupSecondary", in: bundle, compatibleWith: nil),
+            let textInputBackgroundColor =          UIColor(named: "textInputBackground", in: bundle, compatibleWith: nil),
+            let termsOfServiceColor =               UIColor(named: "termsOfService", in: bundle, compatibleWith: nil),
+            let question =                          UIColor(named: "question", in: bundle, compatibleWith: nil),
+            let messageBubbleInboundColor =         UIColor(named: "messageBubbleInbound", in: bundle, compatibleWith: nil),
+            let messageLabelInboundColor =          UIColor(named: "messageLabelInbound", in: bundle, compatibleWith: nil),
+            let messageBubbleOutboundColor =        UIColor(named: "messageBubbleOutbound", in: bundle, compatibleWith: nil),
+            let messageTextInputBorderColor =       UIColor(named: "messageTextInputBorder", in: bundle, compatibleWith: nil),
+            let dialogSeparator =                   UIColor(named: "dialogSeparator", in: bundle, compatibleWith: nil),
+            let dialogText =                        UIColor(named: "dialogText", in: bundle, compatibleWith: nil),
+            let dialogButtonText =                  UIColor(named: "dialogButtonText", in: bundle, compatibleWith: nil),
+            let unselectedSurveyIndicatorColor =    UIColor(named: "unselectedSurveyIndicator", in: bundle, compatibleWith: nil),
+            let surveyGreeting =                    UIColor(named: "surveyGreetingText", in: bundle, compatibleWith: nil),
+//            let surveyImageChoice =                 UIColor(named: "surveyImageChoice", in: bundle, compatibleWith: nil),
+            let attachmentDeleteButton =            UIColor(named: "attachmentDeleteButton", in: bundle, compatibleWith: nil),
+            let error =                             UIColor(named: "apptentiveError", in: bundle, compatibleWith: nil),
+            let textInputPlaceholder =              UIColor(named: "textInputPlaceholder", in: bundle, compatibleWith: nil),
+            let textInputBorderSelected =           UIColor(named: "textInputBorderSelected", in: bundle, compatibleWith: nil),
             let rangeNotSelectedSegmentBackground = UIColor(named: "rangeNotSelectedSegmentBackground", in: bundle, compatibleWith: nil),
-            let disclaimerColor = UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
-//              Trying image
-            let apptentiveRadioButton = UIImage(named: "smallcircle.fill.circle.fill", in: bundle, compatibleWith: nil)
+            let disclaimerColor =                   UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
+
+            //  Trying image (Works but the image is a bit cut)
+            let apptentiveRadioButton =             UIImage(named: "circle", in: bundle, compatibleWith: nil),
+            let surveyImageChoice =                 UIImage(named:"smallcircle.fill.circle.fill", in: bundle, compatibleWith: nil)
                 
         else {
             apptentiveCriticalError("Unable to locate color asset(s).")
@@ -59,7 +61,8 @@ extension Apptentive {
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesOnLoad, for: .normal)
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesWhenSelected, for: .selected)
         segmentedControlAppearance.setBackgroundImage(image(with: rangeNotSelectedSegmentBackground), for: .normal, barMetrics: .default)
-        segmentedControlAppearance.setBackgroundImage(image(with: surveyImageChoice), for: .selected, barMetrics: .default)
+//        segmentedControlAppearance.setBackgroundImage(image(with: surveyImageChoice), for: .selected, barMetrics: .default)
+        segmentedControlAppearance.setBackgroundImage(surveyImageChoice, for: .selected, barMetrics: .default)
         segmentedControlAppearance.setDividerImage(image(with: apptentiveRangeControlBorder), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
 
         let barTitleTextAttributes = [NSAttributedString.Key.foregroundColor: barForegroundColor, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title2)]
@@ -87,7 +90,7 @@ extension Apptentive {
             toolBarAppearanceProxy.scrollEdgeAppearance = toolBarAppearanceProxy.standardAppearance
         }
 
-//        UIToolbar.apptentiveMode = .alwaysShown
+        UIToolbar.apptentiveMode = .alwaysShown
 
         let buttonTitleTextAttributes = [NSAttributedString.Key.foregroundColor: barForegroundColor, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
 
@@ -107,7 +110,9 @@ extension Apptentive {
         // Apptentive UIKit extensions overrides
         UITableView.Style.apptentive = .grouped
         
+        //  Trying image (Works but the image is a bit cut)
         UIImage.apptentiveRadioButton = apptentiveRadioButton
+        UIImage.apptentiveRadioButtonSelected = surveyImageChoice
         
         UIColor.apptentiveInstructionsLabel = instructionsLabelColor
 //        UIColor.apptentiveImageNotSelected = imageNotSelectedColor
@@ -129,7 +134,7 @@ extension Apptentive {
         UIColor.apptentiveUnselectedSurveyIndicatorSegment = unselectedSurveyIndicatorColor
         UIColor.apptentiveBranchedSurveyFooter = barTintColor
         UIColor.apptentiveSurveyIntroduction = surveyGreeting
-        UIColor.apptentiveImageSelected = surveyImageChoice
+//        UIColor.apptentiveImageSelected = surveyImageChoice
         UIColor.apptentiveMessageCenterBackground = apptentiveGroupPrimaryColor
         UIColor.apptentiveMessageCenterComposeBoxBackground = apptentiveGroupPrimaryColor
         UIColor.apptentiveMessageCenterGreetingTitle = surveyGreeting
