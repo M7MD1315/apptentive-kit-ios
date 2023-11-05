@@ -248,7 +248,7 @@ extension Apptentive {
 
         ApptentiveNavigationController.preferredStatusBarStyle = .lightContent
 
-        UIModalPresentationStyle.apptentive = .automatic
+        UIModalPresentationStyle.apptentive = .none
 
         let navigationBarAppearanceProxy = UINavigationBar.appearance(whenContainedInInstancesOf: [ApptentiveNavigationController.self])
         navigationBarAppearanceProxy.titleTextAttributes = barTitleTextAttributes
