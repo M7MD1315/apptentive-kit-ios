@@ -553,12 +553,12 @@ extension UIFont {
 
     /// The font used for all survey question labels.
     @objc public static var apptentiveQuestionLabel: UIFont = {
-        return .batelcoFontBold(ofSize: 99)
+        return .preferredFont(forTextStyle: .headline)
     }()
     
     /// The font used for all BATELCO survey question labels.
     @objc public static var BatelcoQuestionLabel: UIFont = {
-        return .batelcoFontBold(ofSize: 8)
+        return .batelcoFontBold(ofSize: 10)
     }()
 
     /// The font used for the terms of service.
@@ -568,7 +568,7 @@ extension UIFont {
 
     /// The font used for all survey answer choice labels.
     @objc public static var apptentiveChoiceLabel: UIFont = {
-        return .batelcoFontThin(ofSize: 5)
+        return .batelcoFontThin(ofSize: 10)
     }()
 
     /// The font used for the message body in message center.
