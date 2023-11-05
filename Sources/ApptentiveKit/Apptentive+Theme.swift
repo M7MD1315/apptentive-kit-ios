@@ -223,8 +223,8 @@ extension Apptentive {
             let disclaimerColor =                   UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
 
             //  USING BATELCO IMAGES
-            let apptentiveRadioButton =             UIImage(named: "circle", in: bundle, compatibleWith: nil),
-            let surveyImageChoice =                 UIImage(named:"smallcircle.fill.circle.fill", in: bundle, compatibleWith: nil)
+            let apptentiveRadioButton =             UIImage(named: "radio_button_inactive", in: bundle, compatibleWith: nil),
+            let surveyImageChoice =                 UIImage(named: "radio_button_active", in: bundle, compatibleWith: nil)
                 
         else {
             apptentiveCriticalError("Unable to locate color asset(s).")

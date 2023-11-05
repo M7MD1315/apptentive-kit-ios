@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "Benefit_Logo_Benefit-Red_sRGB.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

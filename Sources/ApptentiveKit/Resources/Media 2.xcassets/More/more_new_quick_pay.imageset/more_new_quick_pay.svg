@@ -1,0 +1,28 @@
+<svg id="Group_2264" data-name="Group 2264" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.962" height="16.639" viewBox="0 0 19.962 16.639">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_64628" data-name="Rectangle 64628" width="19.962" height="16.639" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2263" data-name="Group 2263" clip-path="url(#clip-path)">
+    <path id="Path_4515" data-name="Path 4515" d="M80.965,25.033h0l-5.82,0V24.2l5.819,0a.832.832,0,0,0,.832-.831L81.8,11.731a.832.832,0,0,0-.831-.832l-5.82,0v-.831l5.82,0a1.663,1.663,0,0,1,1.662,1.664l-.008,11.639a1.663,1.663,0,0,1-1.663,1.662Z" transform="translate(-62.675 -8.394)" fill="#101b2f"/>
+    <path id="Line_284" data-name="Line 284" d="M.83-1.673H0V-2.5H.83Z" transform="translate(12.479 5.838)" fill="#101b2f"/>
+    <path id="Line_285" data-name="Line 285" d="M.83-1.673H0V-2.5H.83Z" transform="translate(14.142 5.839)" fill="#101b2f"/>
+    <path id="Line_286" data-name="Line 286" d="M.83-1.673H0V-2.5H.83Z" transform="translate(15.805 5.84)" fill="#101b2f"/>
+    <path id="Line_287" data-name="Line 287" d="M.83-1.673H0V-2.5H.83Z" transform="translate(17.468 5.841)" fill="#101b2f"/>
+    <path id="Line_288" data-name="Line 288" d="M.83-1.673H0V-2.5H.83Z" transform="translate(12.472 16.646)" fill="#101b2f"/>
+    <path id="Line_289" data-name="Line 289" d="M.83-1.673H0V-2.5H.83Z" transform="translate(14.135 16.647)" fill="#101b2f"/>
+    <path id="Line_290" data-name="Line 290" d="M.83-1.673H0V-2.5H.83Z" transform="translate(15.798 16.648)" fill="#101b2f"/>
+    <path id="Line_291" data-name="Line 291" d="M.83-1.673H0V-2.5H.83Z" transform="translate(17.46 16.649)" fill="#101b2f"/>
+    <path id="Path_4516" data-name="Path 4516" d="M86.859,45.148a1.663,1.663,0,0,0,0,3.325l4.157,0,0-3.325Z" transform="translate(-71.058 -37.656)" fill="#5b94cf"/>
+    <path id="Line_292" data-name="Line 292" d="M.83-1.673H0V-2.5H.83Z" transform="translate(15.801 11.244)" fill="#101b2f"/>
+    <path id="Path_4517" data-name="Path 4517" d="M82.69,3.374h-.831V1.711a.832.832,0,0,0-.831-.832l-5.82,0V.044l5.82,0a1.663,1.663,0,0,1,1.662,1.664Z" transform="translate(-62.729 -0.037)" fill="#101b2f"/>
+    <path id="Path_4518" data-name="Path 4518" d="M9.977,16.633l-8.315-.006A1.665,1.665,0,0,1,0,14.963l.009-13.3A1.665,1.665,0,0,1,1.672,0L9.987.006a1.665,1.665,0,0,1,1.662,1.664l-.009,13.3A1.665,1.665,0,0,1,9.977,16.633ZM1.672.831a.833.833,0,0,0-.832.831l-.009,13.3a.832.832,0,0,0,.831.832l8.314.006v0a.832.832,0,0,0,.831-.831l.009-13.3A.832.832,0,0,0,9.986.837Z" transform="translate(0 0)" fill="#101b2f"/>
+    <path id="Line_293" data-name="Line 293" d="M-1.674,2.493H-2.5L-2.5,0h.831Z" transform="translate(11.241 2.085)" fill="#101b2f"/>
+    <path id="Line_294" data-name="Line 294" d="M-1.674,2.493H-2.5L-2.5,0h.831Z" transform="translate(11.239 5.41)" fill="#101b2f"/>
+    <path id="Line_295" data-name="Line 295" d="M-1.674,2.493H-2.5L-2.5,0h.831Z" transform="translate(11.237 8.736)" fill="#101b2f"/>
+    <path id="Line_296" data-name="Line 296" d="M-1.674,2.493H-2.5L-2.5,0h.831Z" transform="translate(11.235 12.061)" fill="#101b2f"/>
+    <rect id="Rectangle_64626" data-name="Rectangle 64626" width="2.078" height="5.82" transform="translate(5.822 8.733)" fill="#5b94cf"/>
+    <rect id="Rectangle_64627" data-name="Rectangle 64627" width="3.325" height="16.627" transform="translate(1.667 0.001)" fill="#d70024"/>
+  </g>
+</svg>
