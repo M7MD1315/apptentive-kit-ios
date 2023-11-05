@@ -336,7 +336,7 @@ extension Apptentive {
         UIFont.BatelcoQuestionLabel = .batelcoFontBold(ofSize: 20)
         
         UIFont.apptentiveChoiceLabel = .batelcoFontRegular(ofSize: 15)
-        UIFont.apptentiveTextInput = .batelcoFontThin(ofSize: 10)
+        UIFont.apptentiveTextInput = .batelcoFontThin(ofSize: 15)
 
         DialogView.appearance().titleTextColor = dialogText
         DialogView.appearance().separatorColor = dialogSeparator
