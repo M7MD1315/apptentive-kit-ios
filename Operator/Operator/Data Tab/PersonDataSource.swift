@@ -75,7 +75,14 @@ class PersonDataSource: DataDataSource {
                 cell.textLabel?.text = key
                 cell.detailTextLabel?.text = value ?? "Not Set"
                 cell.detailTextLabel?.textColor = value == nil ? UIColor.apptentiveSecondaryLabel : UIColor.apptentiveQuestionLabel
-
+//                if theme == .apptentive
+//                {
+//                    cell.detailTextLabel?.textColor = value == nil ? UIColor.apptentiveSecondaryLabel : UIColor.apptentiveQuestionLabel
+//                }
+//                else
+//                {
+//                    cell.detailTextLabel?.textColor = value == nil ? UIColor.apptentiveSecondaryLabel : UIColor.BatelcoQuestionLabel
+//                }
                 return cell
             }
         }

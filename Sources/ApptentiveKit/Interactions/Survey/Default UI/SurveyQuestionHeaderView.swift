@@ -9,6 +9,7 @@
 import UIKit
 
 class SurveyQuestionHeaderView: UITableViewHeaderFooterView {
+    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
     let stackView: UIStackView
     let questionLabel: UILabel
     let instructionsLabel: UILabel
@@ -30,16 +31,34 @@ class SurveyQuestionHeaderView: UITableViewHeaderFooterView {
     }
 
     private func configureLabels() {
-        self.questionLabel.adjustsFontForContentSizeCategory = true
-        self.questionLabel.numberOfLines = 0
-        self.questionLabel.lineBreakMode = .byWordWrapping
-        self.questionLabel.font = .apptentiveQuestionLabel
-        self.questionLabel.textColor = .apptentiveQuestionLabel
-        self.instructionsLabel.adjustsFontForContentSizeCategory = true
-        self.instructionsLabel.numberOfLines = 0
-        self.instructionsLabel.lineBreakMode = .byWordWrapping
-        self.instructionsLabel.font = .apptentiveInstructionsLabel
-        self.instructionsLabel.textColor = .apptentiveInstructionsLabel
+        if theme == .apptentive
+        {
+            self.questionLabel.adjustsFontForContentSizeCategory = true
+            self.questionLabel.numberOfLines = 0
+            self.questionLabel.lineBreakMode = .byWordWrapping
+            self.questionLabel.font = .apptentiveQuestionLabel
+            self.questionLabel.textColor = .apptentiveQuestionLabel
+            self.instructionsLabel.adjustsFontForContentSizeCategory = true
+            self.instructionsLabel.numberOfLines = 0
+            self.instructionsLabel.lineBreakMode = .byWordWrapping
+            self.instructionsLabel.font = .apptentiveInstructionsLabel
+            self.instructionsLabel.textColor = .apptentiveInstructionsLabel
+        }
+        else
+        {
+            self.questionLabel.adjustsFontForContentSizeCategory = true
+            self.questionLabel.numberOfLines = 0
+            self.questionLabel.lineBreakMode = .byWordWrapping
+            self.questionLabel.font = .BatelcoQuestionLabel
+            // might need to change
+            self.questionLabel.textColor = .apptentiveQuestionLabel
+            
+            self.instructionsLabel.adjustsFontForContentSizeCategory = true
+            self.instructionsLabel.numberOfLines = 0
+            self.instructionsLabel.lineBreakMode = .byWordWrapping
+            self.instructionsLabel.font = .apptentiveInstructionsLabel
+            self.instructionsLabel.textColor = .apptentiveInstructionsLabel
+        }
 
     }
 

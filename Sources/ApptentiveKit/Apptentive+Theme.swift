@@ -304,7 +304,7 @@ extension Apptentive {
         // Changed to batelco red
 //        UIColor.BatelcoSubmitButton = .appRed
         
-        
+        // might need to change by adding a batelco for uicolor
         UIColor.apptentiveQuestionLabel = question
         UIColor.apptentiveMessageBubbleInbound = messageBubbleInboundColor
         UIColor.apptentiveMessageBubbleOutbound = messageBubbleOutboundColor
