@@ -257,7 +257,7 @@ extension Apptentive {
 
         let barAppearance = UIBarAppearance()
         barAppearance.configureWithOpaqueBackground()
-        barAppearance.backgroundColor = .appRed
+        barAppearance.backgroundColor = barTintColor
 
         let navigationBarAppearance = UINavigationBarAppearance(barAppearance: barAppearance)
         navigationBarAppearance.titleTextAttributes = barTitleTextAttributes
