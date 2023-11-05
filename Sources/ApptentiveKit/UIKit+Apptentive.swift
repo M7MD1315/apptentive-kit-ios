@@ -538,7 +538,7 @@ extension UIFont {
 
     /// The font used for all survey question labels.
     @objc public static var apptentiveQuestionLabel: UIFont = {
-        return .preferredFont(forTextStyle: .headline)
+        return .batelcoFontBlack(ofSize: 5)
     }()
 
     /// The font used for the terms of service.
