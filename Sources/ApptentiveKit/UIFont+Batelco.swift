@@ -12,7 +12,7 @@ import UIKit
 extension UIFont {
   private class func customFont(name: String, size: CGFloat) -> UIFont {
     guard let font = UIFont(name: name, size: size) else {
-      assertMessage("Can't load font: \(name)")
+      //assertMessage("Can't load font: \(name)")
       return .systemFont(ofSize: size)
     }
     return font
