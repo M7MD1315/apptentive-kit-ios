@@ -333,7 +333,7 @@ extension Apptentive {
 
         UIColor.apptentiveTermsOfServiceLabel = termsOfServiceColor
         // Batelco font
-        UIFont.BatelcoQuestionLabel = .preferredFont(forTextStyle: .body)
+        UIFont.BatelcoQuestionLabel = .batelcoFontBold(ofSize: 66)
         
         UIFont.apptentiveChoiceLabel = .preferredFont(forTextStyle: .body)
         UIFont.apptentiveTextInput = .preferredFont(forTextStyle: .body)
