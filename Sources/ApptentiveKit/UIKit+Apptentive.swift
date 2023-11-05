@@ -293,7 +293,7 @@ extension UIColor {
     /// The color to use for labels of primary prominance.
     internal static var apptentiveLabel: UIColor = {
 
-        return .label
+        return .appRed
 
     }()
 
