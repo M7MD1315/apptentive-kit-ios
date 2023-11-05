@@ -9,6 +9,9 @@
 import UIKit
 
 class SurveyChoiceCell: UITableViewCell {
+    
+    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
+
     let buttonImageView: UIImageView
     let choiceLabel: UILabel
     let imageFontMetrics: UIFontMetrics
@@ -33,15 +36,31 @@ class SurveyChoiceCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         self.buttonImageView.isHighlighted = selected
-        if self.isSelected {
-            self.buttonImageView.tintColor = .apptentiveImageSelected
+        if self.isSelected 
+        {
+            if theme == .apptentive
+            {
+                self.buttonImageView.tintColor = .apptentiveImageSelected
+            }
+            else
+            {
+                self.buttonImageView.tintColor = .BatelcoImageSelected
+            }
             self.accessibilityTraits.insert(UIAccessibilityTraits.selected)
+            
         } else {
-            self.buttonImageView.tintColor = .apptentiveImageNotSelected
+            if theme == .apptentive
+            {
+                self.buttonImageView.tintColor = .apptentiveImageNotSelected
+            }
+            else
+            {
+                self.buttonImageView.tintColor = .BatelcoImageNotSelected
+            }
             self.accessibilityTraits.remove(UIAccessibilityTraits.selected)
         }
     }
-
+    
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         super.setHighlighted(highlighted, animated: animated)
 

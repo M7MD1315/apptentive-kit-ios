@@ -9,6 +9,7 @@
 import UIKit
 
 class SurveyOtherChoiceCell: SurveyChoiceCell {
+    
     let textField: UITextField
     var textFieldSpacerConstraint = NSLayoutConstraint()
 
@@ -38,11 +39,28 @@ class SurveyOtherChoiceCell: SurveyChoiceCell {
         super.setSelected(selected, animated: animated)
 
         self.imageView?.isHighlighted = selected
-        if self.isSelected {
-            self.imageView?.tintColor = .apptentiveImageSelected
+        if self.isSelected 
+        {
+            if theme == .apptentive
+            {
+                self.imageView?.tintColor = .apptentiveImageSelected
+            }
+            else
+            {
+                self.imageView?.tintColor = .BatelcoImageSelected
+            }
             self.accessibilityTraits.insert(UIAccessibilityTraits.selected)
-        } else {
-            self.imageView?.tintColor = .apptentiveImageNotSelected
+        } 
+        else
+        {
+            if theme == .apptentive
+            {
+                self.imageView?.tintColor = .apptentiveImageNotSelected
+            }
+            else
+            {
+                self.imageView?.tintColor = .BatelcoImageNotSelected
+            }
             self.accessibilityTraits.remove(UIAccessibilityTraits.selected)
         }
     }

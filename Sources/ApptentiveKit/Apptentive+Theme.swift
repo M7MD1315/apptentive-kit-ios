@@ -302,7 +302,8 @@ extension Apptentive {
         UIColor.apptentiveSeparator = apptentiveGroupPrimaryColor
         UIColor.apptentiveTextInputBackground = textInputBackgroundColor
         // Changed to batelco red
-        UIColor.BatelcoSubmitButton = .appRed
+//        UIColor.BatelcoSubmitButton = .appRed
+        
         
         UIColor.apptentiveQuestionLabel = question
         UIColor.apptentiveMessageBubbleInbound = messageBubbleInboundColor
