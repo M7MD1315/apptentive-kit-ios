@@ -36,7 +36,7 @@ public class Apptentive: NSObject, EnvironmentDelegate, InteractionDelegate, Mes
     /// The theme to apply to Apptentive UI.
     ///
     /// This property must be set before calling `register(credentials:)`.
-    public var theme: UITheme = .batelco
+    public var theme: UITheme = .apptentive
 
     /// The name of the person using the app, if available.
     @objc public var personName: String? {

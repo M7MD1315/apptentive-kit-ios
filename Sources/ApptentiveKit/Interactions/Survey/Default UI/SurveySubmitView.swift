@@ -9,7 +9,7 @@
 import UIKit
 
 class SurveySubmitView: UIView {
-    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
+    var theme: Apptentive.UITheme = .apptentive // Set to the desired theme
     let submitButton: UIButton
     let submitLabel: UILabel
     let disclaimerLabel: UILabel
