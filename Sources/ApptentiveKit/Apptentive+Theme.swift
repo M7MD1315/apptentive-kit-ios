@@ -194,8 +194,8 @@ extension Apptentive {
         // UIAppearance-based overrides
 
         let bundle = Bundle.apptentive
-        guard 
-            let barTintColor =                      UIColor(named: "barTint", in: bundle, compatibleWith: nil),
+        let barTintColor =                      UIColor(hex: "#E21331")
+        guard
             let barForegroundColor =                UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder =      UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
             let textInputBorderColor =              UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
