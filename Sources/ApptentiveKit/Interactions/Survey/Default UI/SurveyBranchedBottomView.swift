@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class SurveyBranchedBottomView: UIView {
+    
+    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
 
     var nextButton: UIButton
     var termsAndConditions: UIButton
@@ -37,25 +39,48 @@ class SurveyBranchedBottomView: UIView {
         self.configureButtonContainer()
         self.configureStackView()
     }
-
+    
     init(frame: CGRect, numberOfSegments: Int) {
-        self.surveyIndicator = SurveyIndicator(frame: frame, numberOfSegments: numberOfSegments)
-        self.nextButton = UIButton(frame: frame)
-        self.termsAndConditions = UIButton(frame: frame)
-        self.buttonContainerView = UIView(frame: frame)
-        self.stackView = UIStackView(frame: frame)
-        self.stackViewHeightConstraint = self.stackView.heightAnchor.constraint(equalToConstant: 160)
-        self.stackViewHeightConstraint.priority = .defaultHigh
-        super.init(frame: frame)
-        self.addSubview(self.stackView)
-        self.buttonContainerView.addSubview(self.nextButton)
-        self.setConstraints()
-        self.backgroundColor = .apptentiveSubmitButton
-        self.configureNextButton()
-        self.configureSurveyIndicator()
-        self.configureTermsAndConditions()
-        self.configureButtonContainer()
-        self.configureStackView()
+        if theme == .apptentive
+        {
+            self.surveyIndicator = SurveyIndicator(frame: frame, numberOfSegments: numberOfSegments)
+            self.nextButton = UIButton(frame: frame)
+            self.termsAndConditions = UIButton(frame: frame)
+            self.buttonContainerView = UIView(frame: frame)
+            self.stackView = UIStackView(frame: frame)
+            self.stackViewHeightConstraint = self.stackView.heightAnchor.constraint(equalToConstant: 160)
+            self.stackViewHeightConstraint.priority = .defaultHigh
+            super.init(frame: frame)
+            self.addSubview(self.stackView)
+            self.buttonContainerView.addSubview(self.nextButton)
+            self.setConstraints()
+            self.backgroundColor = .apptentiveSubmitButton
+            self.configureNextButton()
+            self.configureSurveyIndicator()
+            self.configureTermsAndConditions()
+            self.configureButtonContainer()
+            self.configureStackView()
+        }
+        else
+        {
+            self.surveyIndicator = SurveyIndicator(frame: frame, numberOfSegments: numberOfSegments)
+            self.nextButton = UIButton(frame: frame)
+            self.termsAndConditions = UIButton(frame: frame)
+            self.buttonContainerView = UIView(frame: frame)
+            self.stackView = UIStackView(frame: frame)
+            self.stackViewHeightConstraint = self.stackView.heightAnchor.constraint(equalToConstant: 160)
+            self.stackViewHeightConstraint.priority = .defaultHigh
+            super.init(frame: frame)
+            self.addSubview(self.stackView)
+            self.buttonContainerView.addSubview(self.nextButton)
+            self.setConstraints()
+            self.backgroundColor = .BatelcoSubmitButton
+            self.configureNextButton()
+            self.configureSurveyIndicator()
+            self.configureTermsAndConditions()
+            self.configureButtonContainer()
+            self.configureStackView()
+        }
     }
 
     required init?(coder: NSCoder) {
@@ -74,8 +99,16 @@ class SurveyBranchedBottomView: UIView {
     }
 
     override func tintColorDidChange() {
-        super.tintColorDidChange()
-        self.nextButton.backgroundColor = UIColor.apptentiveSubmitButton
+        if theme == .apptentive
+        {
+            super.tintColorDidChange()
+            self.nextButton.backgroundColor = UIColor.apptentiveSubmitButton
+        }
+        else
+        {
+            super.tintColorDidChange()
+            self.nextButton.backgroundColor = UIColor.BatelcoSubmitButton
+        }
     }
 
     private func configureButtonContainer() {
@@ -97,15 +130,30 @@ class SurveyBranchedBottomView: UIView {
     }
 
     private func configureNextButton() {
-        self.nextButton.backgroundColor = UIColor.apptentiveSubmitButton
-        self.nextButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
-        self.nextButton.titleLabel?.font = .apptentiveSubmitButtonTitle
-        self.nextButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        self.nextButton.layer.borderWidth = .apptentiveButtonBorderWidth
-        self.nextButton.layer.borderColor = UIColor.apptentiveSubmitButtonBorder.cgColor
-        self.nextButton.setTitleColor(.apptentiveSubmitButtonTitle, for: .normal)
-        self.nextButton.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.nextButton.translatesAutoresizingMaskIntoConstraints = false
+        if theme == .apptentive
+        {
+            self.nextButton.backgroundColor = UIColor.apptentiveSubmitButton
+            self.nextButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+            self.nextButton.titleLabel?.font = .apptentiveSubmitButtonTitle
+            self.nextButton.titleLabel?.adjustsFontForContentSizeCategory = true
+            self.nextButton.layer.borderWidth = .apptentiveButtonBorderWidth
+            self.nextButton.layer.borderColor = UIColor.apptentiveSubmitButtonBorder.cgColor
+            self.nextButton.setTitleColor(.apptentiveSubmitButtonTitle, for: .normal)
+            self.nextButton.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            self.nextButton.translatesAutoresizingMaskIntoConstraints = false
+        }
+        else
+        {
+            self.nextButton.backgroundColor = UIColor.BatelcoSubmitButton
+            self.nextButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+            self.nextButton.titleLabel?.font = .apptentiveSubmitButtonTitle
+            self.nextButton.titleLabel?.adjustsFontForContentSizeCategory = true
+            self.nextButton.layer.borderWidth = .apptentiveButtonBorderWidth
+            self.nextButton.layer.borderColor = UIColor.apptentiveSubmitButtonBorder.cgColor
+            self.nextButton.setTitleColor(.apptentiveSubmitButtonTitle, for: .normal)
+            self.nextButton.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            self.nextButton.translatesAutoresizingMaskIntoConstraints = false
+        }
     }
 
     private func configureStackView() {

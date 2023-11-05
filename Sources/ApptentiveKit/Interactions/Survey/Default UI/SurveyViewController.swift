@@ -9,6 +9,7 @@
 import UIKit
 
 class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, SurveyViewModelDelegate, UIAdaptivePresentationControllerDelegate {
+    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
     static let animationDuration = 0.30
 
     static let minLabelAttrbutes: [NSAttributedString.Key: Any] = {
@@ -178,13 +179,27 @@ class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextVi
                 self.surveyBranchedBottomView?.bottomView.termsAndConditions.setAttributedTitle(attributedTermsAndConditions, for: .normal)
                 self.configureTermsOfService()
             } else {
-                switch UIToolbar.apptentiveMode {
-                case .alwaysShown:
-                    self.surveyBranchedBottomView?.bottomView.backgroundColor = .apptentiveSubmitButton
-                    self.surveyBranchedBottomView?.backgroundColor = .apptentiveSubmitButton
-                case .hiddenWhenEmpty:
-                    self.surveyBranchedBottomView?.bottomView.backgroundColor = .apptentiveGroupedBackground
-                    self.surveyBranchedBottomView?.backgroundColor = .apptentiveGroupedBackground
+                if theme == .apptentive
+                {
+                    switch UIToolbar.apptentiveMode {
+                    case .alwaysShown:
+                        self.surveyBranchedBottomView?.bottomView.backgroundColor = .apptentiveSubmitButton
+                        self.surveyBranchedBottomView?.backgroundColor = .apptentiveSubmitButton
+                    case .hiddenWhenEmpty:
+                        self.surveyBranchedBottomView?.bottomView.backgroundColor = .apptentiveGroupedBackground
+                        self.surveyBranchedBottomView?.backgroundColor = .apptentiveGroupedBackground
+                    }
+                }
+                else
+                {
+                    switch UIToolbar.apptentiveMode {
+                    case .alwaysShown:
+                        self.surveyBranchedBottomView?.bottomView.backgroundColor = .BatelcoSubmitButton
+                        self.surveyBranchedBottomView?.backgroundColor = .BatelcoSubmitButton
+                    case .hiddenWhenEmpty:
+                        self.surveyBranchedBottomView?.bottomView.backgroundColor = .apptentiveGroupedBackground
+                        self.surveyBranchedBottomView?.backgroundColor = .apptentiveGroupedBackground
+                    }
                 }
             }
             self.surveyBranchedBottomView?.bottomView.nextButton.setTitle(self.viewModel.advanceButtonText, for: .normal)
@@ -657,7 +672,14 @@ class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextVi
     @objc func keyboardWillDisappear() {
         if let bottomView = surveyBranchedBottomView {
             bottomView.bottomView.stackViewHeightConstraint.constant = 160
-            bottomView.bottomView.backgroundColor = .apptentiveSubmitButton
+            if theme == .apptentive
+            {
+                bottomView.bottomView.backgroundColor = .apptentiveSubmitButton
+            }
+            else
+            {
+                bottomView.bottomView.backgroundColor = .BatelcoSubmitButton
+            }
             UIView.transition(
 
                 with: bottomView, duration: 0.10, options: .transitionCrossDissolve

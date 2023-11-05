@@ -403,7 +403,7 @@ extension UIColor {
     
     /// The background color to use for the submit button on surveys.
     @objc public static var apptentiveSubmitButton: UIColor = {
-        return .appRed
+        return .apptentiveTint
     }()
     
     /// The BATELCO color to use for images in a selected state for surveys.
@@ -417,9 +417,9 @@ extension UIColor {
     }()
 
     /// The background color to use for the submit button on surveys.
-//    @objc public static var BatelcoSubmitButton: UIColor = {
-//        return .appRed
-//    }()
+    @objc public static var BatelcoSubmitButton: UIColor = {
+        return .appRed
+    }()
 
     /// The background color to use for the footer which contains the terms and conditions for branched surveys.
     @objc public static var apptentiveBranchedSurveyFooter: UIColor = {

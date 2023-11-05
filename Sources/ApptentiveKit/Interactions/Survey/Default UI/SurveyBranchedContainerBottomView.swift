@@ -10,25 +10,50 @@ import Foundation
 import UIKit
 
 class SurveyBranchedContainerBottomView: UIView {
-
+    
+    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
     let bottomView: SurveyBranchedBottomView
 
     override init(frame: CGRect) {
-        self.bottomView = SurveyBranchedBottomView(frame: frame)
-        super.init(frame: frame)
-        self.addSubview(self.bottomView)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.backgroundColor = .apptentiveSubmitButton
-        self.setConstraints()
+        if theme == .apptentive
+        {
+            self.bottomView = SurveyBranchedBottomView(frame: frame)
+            super.init(frame: frame)
+            self.addSubview(self.bottomView)
+            self.translatesAutoresizingMaskIntoConstraints = false
+            self.backgroundColor = .apptentiveSubmitButton
+            self.setConstraints()
+        }
+        else
+        {
+            self.bottomView = SurveyBranchedBottomView(frame: frame)
+            super.init(frame: frame)
+            self.addSubview(self.bottomView)
+            self.translatesAutoresizingMaskIntoConstraints = false
+            self.backgroundColor = .BatelcoSubmitButton
+            self.setConstraints()
+        }
     }
 
     init(frame: CGRect, numberOfSegments: Int) {
-        self.bottomView = SurveyBranchedBottomView(frame: frame, numberOfSegments: numberOfSegments)
-        super.init(frame: frame)
-        self.addSubview(self.bottomView)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.backgroundColor = .apptentiveSubmitButton
-        self.setConstraints()
+        if theme == .apptentive
+        {
+            self.bottomView = SurveyBranchedBottomView(frame: frame, numberOfSegments: numberOfSegments)
+            super.init(frame: frame)
+            self.addSubview(self.bottomView)
+            self.translatesAutoresizingMaskIntoConstraints = false
+            self.backgroundColor = .apptentiveSubmitButton
+            self.setConstraints()
+        }
+        else
+        {
+            self.bottomView = SurveyBranchedBottomView(frame: frame, numberOfSegments: numberOfSegments)
+            super.init(frame: frame)
+            self.addSubview(self.bottomView)
+            self.translatesAutoresizingMaskIntoConstraints = false
+            self.backgroundColor = .BatelcoSubmitButton
+            self.setConstraints()
+        }
     }
 
     required init?(coder: NSCoder) {
