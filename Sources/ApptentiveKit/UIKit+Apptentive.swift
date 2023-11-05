@@ -393,16 +393,31 @@ extension UIColor {
 
     /// The color to use for images in a selected state for surveys.
     @objc public static var apptentiveImageSelected: UIColor = {
-        return .appRed
+        return .apptentiveTint
     }()
 
     /// The color to use for images in a non-selected state for surveys.
     @objc public static var apptentiveImageNotSelected: UIColor = {
+        return .apptentiveTint
+    }()
+    
+    /// The background color to use for the submit button on surveys.
+    @objc public static var apptentiveSubmitButton: UIColor = {
+        return .apptentiveTint
+    }()
+    
+    /// The BATELCO color to use for images in a selected state for surveys.
+    @objc public static var BatelcoImageSelected: UIColor = {
+        return .appRed
+    }()
+
+    /// The BATELCO color to use for images in a non-selected state for surveys.
+    @objc public static var BatelcoImageNotSelected: UIColor = {
         return .appRed
     }()
 
     /// The background color to use for the submit button on surveys.
-    @objc public static var apptentiveSubmitButton: UIColor = {
+    @objc public static var BatelcoSubmitButton: UIColor = {
         return .appRed
     }()
 
@@ -538,6 +553,11 @@ extension UIFont {
 
     /// The font used for all survey question labels.
     @objc public static var apptentiveQuestionLabel: UIFont = {
+        return .preferredFont(forTextStyle: .headline)
+    }()
+    
+    /// The font used for all BATELCO survey question labels.
+    @objc public static var BatelcoQuestionLabel: UIFont = {
         return .batelcoFontBlack(ofSize: 5)
     }()
 

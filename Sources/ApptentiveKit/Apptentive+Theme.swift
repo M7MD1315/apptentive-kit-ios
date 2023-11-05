@@ -302,7 +302,7 @@ extension Apptentive {
         UIColor.apptentiveSeparator = apptentiveGroupPrimaryColor
         UIColor.apptentiveTextInputBackground = textInputBackgroundColor
         // Changed to batelco red
-        UIColor.apptentiveSubmitButton = .appRed
+        UIColor.BatelcoSubmitButton = .appRed
         
         UIColor.apptentiveQuestionLabel = question
         UIColor.apptentiveMessageBubbleInbound = messageBubbleInboundColor
@@ -310,7 +310,6 @@ extension Apptentive {
         UIColor.apptentiveMessageLabelOutbound = termsOfServiceColor
         UIColor.apptentiveMessageLabelInbound = messageLabelInboundColor
         UIColor.apptentiveMessageCenterTextInputBorder = messageTextInputBorderColor
-        // UIColor.apptentiveSelectedSurveyIndicatorSegment = buttonTintColor
         UIColor.apptentiveUnselectedSurveyIndicatorSegment = unselectedSurveyIndicatorColor
         UIColor.apptentiveBranchedSurveyFooter = barTintColor
         UIColor.apptentiveSurveyIntroduction = surveyGreeting
@@ -332,8 +331,9 @@ extension Apptentive {
         UIColor.apptentiveRangeControlBorder = apptentiveRangeControlBorder
 
         UIColor.apptentiveTermsOfServiceLabel = termsOfServiceColor
-
-        UIFont.apptentiveQuestionLabel = .preferredFont(forTextStyle: .body)
+        // Batelco font
+        UIFont.BatelcoQuestionLabel = .preferredFont(forTextStyle: .body)
+        
         UIFont.apptentiveChoiceLabel = .preferredFont(forTextStyle: .body)
         UIFont.apptentiveTextInput = .preferredFont(forTextStyle: .body)
 
