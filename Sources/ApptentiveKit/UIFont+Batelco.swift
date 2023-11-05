@@ -12,13 +12,23 @@ import UIKit
 extension UIFont {
   private class func customFont(name: String, size: CGFloat) -> UIFont {
     guard let font = UIFont(name: name, size: size) else {
-      //assertMessage("Can't load font: \(name)")
+      assertMessage("Can't load font: \(name)")
       return .systemFont(ofSize: size)
     }
     return font
   }
 }
-
+func assertMessage(_ message: String,
+                   _ file: StaticString = #file,
+                   _ function: StaticString = #function,
+                   _ line: UInt = #line) {
+  
+    //print(message, "\(file)", "\(function)", line: Int(line))
+    print("CANT LOAD FONT")
+#if DEVELOPMENT
+  assertionFailure(message, file: file, line: line)
+#endif
+}
 // Batelco App Font
 public extension UIFont {
   
