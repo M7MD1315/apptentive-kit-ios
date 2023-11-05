@@ -553,7 +553,7 @@ extension UIFont {
 
     /// The font used for all survey question labels.
     @objc public static var apptentiveQuestionLabel: UIFont = {
-        return .preferredFont(forTextStyle: .headline)
+        return .batelcoFontBold(ofSize: 99)
     }()
     
     /// The font used for all BATELCO survey question labels.
