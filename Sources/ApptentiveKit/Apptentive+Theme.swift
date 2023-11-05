@@ -333,10 +333,10 @@ extension Apptentive {
 
         UIColor.apptentiveTermsOfServiceLabel = termsOfServiceColor
         // Batelco font
-        UIFont.BatelcoQuestionLabel = .batelcoFontBold(ofSize: 15)
+        UIFont.BatelcoQuestionLabel = .batelcoFontBold(ofSize: 20)
         
-        UIFont.apptentiveChoiceLabel = .batelcoFontRegular(ofSize: 10)
-        UIFont.apptentiveTextInput = .batelcoFontThin(ofSize: 5)
+        UIFont.apptentiveChoiceLabel = .batelcoFontRegular(ofSize: 15)
+        UIFont.apptentiveTextInput = .batelcoFontThin(ofSize: 10)
 
         DialogView.appearance().titleTextColor = dialogText
         DialogView.appearance().separatorColor = dialogSeparator
