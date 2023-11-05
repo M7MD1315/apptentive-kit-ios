@@ -248,7 +248,7 @@ extension Apptentive {
 
         ApptentiveNavigationController.preferredStatusBarStyle = .lightContent
 
-        UIModalPresentationStyle.apptentive = .none
+        UIModalPresentationStyle.apptentive = .popover
 
         let navigationBarAppearanceProxy = UINavigationBar.appearance(whenContainedInInstancesOf: [ApptentiveNavigationController.self])
         navigationBarAppearanceProxy.titleTextAttributes = barTitleTextAttributes
@@ -269,7 +269,7 @@ extension Apptentive {
             toolBarAppearanceProxy.scrollEdgeAppearance = toolBarAppearanceProxy.standardAppearance
         }
 
-        UIToolbar.apptentiveMode = .alwaysShown
+        UIToolbar.apptentiveMode = .hiddenWhenEmpty
 
         let buttonTitleTextAttributes = [NSAttributedString.Key.foregroundColor: barForegroundColor, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
 
