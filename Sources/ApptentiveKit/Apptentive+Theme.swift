@@ -194,7 +194,8 @@ extension Apptentive {
         // UIAppearance-based overrides
 
         let bundle = Bundle.apptentive
-        guard let barTintColor =                    UIColor(named: "barTint", in: bundle, compatibleWith: nil),
+        guard 
+            let barTintColor =                      UIColor(named: "barTint", in: bundle, compatibleWith: nil),
             let barForegroundColor =                UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder =      UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
             let textInputBorderColor =              UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
@@ -247,7 +248,7 @@ extension Apptentive {
 
         ApptentiveNavigationController.preferredStatusBarStyle = .lightContent
 
-        UIModalPresentationStyle.apptentive = .fullScreen
+        UIModalPresentationStyle.apptentive = .automatic
 
         let navigationBarAppearanceProxy = UINavigationBar.appearance(whenContainedInInstancesOf: [ApptentiveNavigationController.self])
         navigationBarAppearanceProxy.titleTextAttributes = barTitleTextAttributes
