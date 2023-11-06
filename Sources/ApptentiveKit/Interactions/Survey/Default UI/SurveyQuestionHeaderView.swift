@@ -9,7 +9,7 @@
 import UIKit
 
 class SurveyQuestionHeaderView: UITableViewHeaderFooterView {
-    var theme: Apptentive.UITheme = .apptentive // Set to the desired theme
+    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
     let stackView: UIStackView
     let questionLabel: UILabel
     let instructionsLabel: UILabel
