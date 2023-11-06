@@ -11,7 +11,7 @@ import UIKit
 
 class SurveyBranchedContainerBottomView: UIView {
     
-    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
+    var theme: Apptentive.UITheme = .apptentive // Set to the desired theme
     let bottomView: SurveyBranchedBottomView
 
     override init(frame: CGRect) {

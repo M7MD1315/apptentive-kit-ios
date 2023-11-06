@@ -398,12 +398,12 @@ extension UIColor {
 
     /// The color to use for images in a selected state for surveys.
     @objc public static var apptentiveImageSelected: UIColor = {
-        return .apptentiveTint
+        return .appRed
     }()
 
     /// The color to use for images in a non-selected state for surveys.
     @objc public static var apptentiveImageNotSelected: UIColor = {
-        return .apptentiveTint
+        return .appRed
     }()
     
     /// The background color to use for the submit button on surveys.
