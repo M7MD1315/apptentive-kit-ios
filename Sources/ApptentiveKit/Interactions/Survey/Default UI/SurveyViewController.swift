@@ -517,7 +517,6 @@ class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextVi
                 UIAccessibility.post(notification: .layoutChanged, argument: self.tableView.headerView(forSection: firstInvalidQuestionIndex))
             }
         }
-        self.tableView.reloadData()
     }
 
     // MARK: - Survey View Model Delegate
