@@ -10,7 +10,7 @@ import UIKit
 
 class SurveyChoiceCell: UITableViewCell {
     
-    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
+    var theme: Apptentive.UITheme = .apptentive // Set to the desired theme
 
     let buttonImageView: UIImageView
     let choiceLabel: UILabel
