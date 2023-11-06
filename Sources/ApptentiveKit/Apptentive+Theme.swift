@@ -14,11 +14,12 @@ extension Apptentive {
         // UIAppearance-based overrides
 
         let bundle = Bundle.apptentive
-        guard let barTintColor =                    UIColor(named: "barTint", in: bundle, compatibleWith: nil),
+        guard 
+            let barTintColor =                      UIColor(named: "barTint", in: bundle, compatibleWith: nil),
             let barForegroundColor =                UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
             let buttonTintColor =                   UIColor(named: "buttonTint", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder =      UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
-            let imageNotSelectedColor =           UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
+            let imageNotSelectedColor =             UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
             let textInputBorderColor =              UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
             let textInputColor =                    UIColor(named: "textInput", in: bundle, compatibleWith: nil),
             let instructionsLabelColor =            UIColor(named: "instructionsLabel", in: bundle, compatibleWith: nil),
@@ -237,7 +238,7 @@ extension Apptentive {
 
         ApptentiveNavigationController.preferredStatusBarStyle = .lightContent
 
-        UIModalPresentationStyle.apptentive = .pageSheet
+        UIModalPresentationStyle.apptentive = .popover
 
         let navigationBarAppearanceProxy = UINavigationBar.appearance(whenContainedInInstancesOf: [ApptentiveNavigationController.self])
         navigationBarAppearanceProxy.titleTextAttributes = barTitleTextAttributes
@@ -281,7 +282,7 @@ extension Apptentive {
         //  USING BATELCO IMAGES
 //        UIImage.apptentiveRadioButton = apptentiveRadioButton
 //        UIImage.apptentiveRadioButtonSelected = surveyImageChoice
-        UIColor.apptentiveImageSelected = surveyImageChoice
+        UIColor.apptentiveImageSelected = .appRed
         UIColor.apptentiveInstructionsLabel = instructionsLabelColor
         UIColor.apptentiveTextInputBorder = textInputBorderColor
         UIColor.apptentiveTextInput = textInputColor
