@@ -176,19 +176,6 @@ extension Apptentive {
         UIButton.apptentiveStyle = .radius(8.0)
         UIButton.apptentiveClose?.tintColor = .white
     }
-
-    private func image(with color: UIColor?) -> UIImage? {
-        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
-        UIGraphicsBeginImageContext(rect.size)
-        let context = UIGraphicsGetCurrentContext()
-        if let cg = color?.cgColor {
-            context?.setFillColor(cg)
-        }
-        context?.fill(rect)
-        let theImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return theImage
-    }
     
     func applyBatelcoTheme() {
         // UIAppearance-based overrides
@@ -364,5 +351,18 @@ extension Apptentive {
 
         UIButton.apptentiveStyle = .radius(8.0)
         UIButton.apptentiveClose?.tintColor = .white
+    }
+    
+    private func image(with color: UIColor?) -> UIImage? {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        if let cg = color?.cgColor {
+            context?.setFillColor(cg)
+        }
+        context?.fill(rect)
+        let theImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return theImage
     }
 }
