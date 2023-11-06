@@ -126,7 +126,7 @@ extension Apptentive {
         UIColor.apptentiveUnselectedSurveyIndicatorSegment = unselectedSurveyIndicatorColor
         UIColor.apptentiveBranchedSurveyFooter = barTintColor
         UIColor.apptentiveSurveyIntroduction = surveyGreeting
-        UIColor.apptentiveImageSelected = surveyImageChoice
+        UIColor.apptentiveImageSelected = .appRed
         UIColor.apptentiveMessageCenterBackground = apptentiveGroupPrimaryColor
         UIColor.apptentiveMessageCenterComposeBoxBackground = apptentiveGroupPrimaryColor
         UIColor.apptentiveMessageCenterGreetingTitle = surveyGreeting
