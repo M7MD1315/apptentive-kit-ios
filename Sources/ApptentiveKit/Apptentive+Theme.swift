@@ -226,6 +226,7 @@ extension Apptentive {
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesOnLoad, for: .normal)
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesWhenSelected, for: .selected)
         segmentedControlAppearance.setBackgroundImage(image(with: rangeNotSelectedSegmentBackground), for: .normal, barMetrics: .default)
+        
         // USING BATELCO IMAGES
         segmentedControlAppearance.setBackgroundImage(surveyImageChoice, for: .selected, barMetrics: .default)
         
@@ -235,7 +236,7 @@ extension Apptentive {
 
         ApptentiveNavigationController.preferredStatusBarStyle = .lightContent
 
-        UIModalPresentationStyle.apptentive = .popover
+        UIModalPresentationStyle.apptentive = .fullScreen
 
         let navigationBarAppearanceProxy = UINavigationBar.appearance(whenContainedInInstancesOf: [ApptentiveNavigationController.self])
         navigationBarAppearanceProxy.titleTextAttributes = barTitleTextAttributes
