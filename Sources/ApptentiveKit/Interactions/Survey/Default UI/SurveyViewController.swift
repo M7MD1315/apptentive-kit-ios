@@ -247,6 +247,7 @@ class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextVi
         self.tableView.estimatedSectionHeaderHeight = 75.0
         self.tableView.estimatedSectionFooterHeight = 35.0
         self.tableView.estimatedRowHeight = 44.0
+        self.tableView.isMultipleTouchEnabled = false
     }
 
     override func viewWillAppear(_ animated: Bool) {

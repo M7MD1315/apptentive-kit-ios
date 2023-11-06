@@ -39,7 +39,7 @@ extension UITableView.Style {
 
 extension UIModalPresentationStyle {
     /// The modal presentation style to use for Surveys and Message Center.
-    public static var apptentive: Self = .fullScreen
+    public static var apptentive: Self = .pageSheet
 }
 
 extension UIBarButtonItem {
