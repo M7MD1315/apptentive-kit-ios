@@ -502,11 +502,13 @@ class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextVi
         if let firstInvalidQuestionIndex = self.viewModel.invalidQuestionIndexes.min() {
             UIAccessibility.post(notification: .layoutChanged, argument: self.tableView.headerView(forSection: firstInvalidQuestionIndex))
         }
+        self.tableView.layoutSubviews()
     }
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if let firstInvalidQuestionIndex = self.viewModel.invalidQuestionIndexes.min() {
             UIAccessibility.post(notification: .layoutChanged, argument: self.tableView.headerView(forSection: firstInvalidQuestionIndex))
         }
+        self.tableView.layoutSubviews()
     }
     
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -515,6 +517,7 @@ class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextVi
                 UIAccessibility.post(notification: .layoutChanged, argument: self.tableView.headerView(forSection: firstInvalidQuestionIndex))
             }
         }
+        self.tableView.layoutSubviews()
     }
 
     // MARK: - Survey View Model Delegate
