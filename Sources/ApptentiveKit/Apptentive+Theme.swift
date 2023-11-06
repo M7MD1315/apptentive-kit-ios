@@ -229,6 +229,7 @@ extension Apptentive {
         
         // USING BATELCO IMAGES
         segmentedControlAppearance.setBackgroundImage(surveyImageChoice, for: .selected, barMetrics: .default)
+        //segmentedControlAppearance.setBackgroundImage(image(with: surveyImageChoice), for: .selected, barMetrics: .default)
         
         segmentedControlAppearance.setDividerImage(image(with: apptentiveRangeControlBorder), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
 
@@ -236,7 +237,7 @@ extension Apptentive {
 
         ApptentiveNavigationController.preferredStatusBarStyle = .lightContent
 
-        UIModalPresentationStyle.apptentive = .fullScreen
+        UIModalPresentationStyle.apptentive = .pageSheet
 
         let navigationBarAppearanceProxy = UINavigationBar.appearance(whenContainedInInstancesOf: [ApptentiveNavigationController.self])
         navigationBarAppearanceProxy.titleTextAttributes = barTitleTextAttributes
@@ -320,9 +321,9 @@ extension Apptentive {
         UIColor.apptentiveRangeControlBorder = apptentiveRangeControlBorder
 
         UIColor.apptentiveTermsOfServiceLabel = termsOfServiceColor
+        
         // Batelco font
         UIFont.BatelcoQuestionLabel = .batelcoFontBold(ofSize: 20)
-        
         UIFont.apptentiveChoiceLabel = .batelcoFontRegular(ofSize: 15)
         UIFont.apptentiveTextInput = .batelcoFontThin(ofSize: 15)
 
