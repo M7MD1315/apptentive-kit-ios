@@ -209,10 +209,10 @@ extension Apptentive {
             let textInputBorderSelected =           UIColor(named: "textInputBorderSelected", in: bundle, compatibleWith: nil),
             let rangeNotSelectedSegmentBackground = UIColor(named: "rangeNotSelectedSegmentBackground", in: bundle, compatibleWith: nil),
             let disclaimerColor =                   UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
-
+            let surveyImageChoice =                 UIColor(named: "surveyImageChoice", in: bundle, compatibleWith: nil)
             //  USING BATELCO IMAGES
-            let apptentiveRadioButton =             UIImage(named: "radio_button_inactive", in: bundle, compatibleWith: nil),
-            let surveyImageChoice =                 UIImage(named: "radio_button_active", in: bundle, compatibleWith: nil)
+            //let apptentiveRadioButton =             UIImage(named: "radio_button_inactive", in: bundle, compatibleWith: nil),
+            //let surveyImageChoice =                 UIImage(named: "radio_button_active", in: bundle, compatibleWith: nil)
                 
         else {
             apptentiveCriticalError("Unable to locate color asset(s).")
@@ -226,9 +226,10 @@ extension Apptentive {
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesOnLoad, for: .normal)
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesWhenSelected, for: .selected)
         segmentedControlAppearance.setBackgroundImage(image(with: rangeNotSelectedSegmentBackground), for: .normal, barMetrics: .default)
+        segmentedControlAppearance.setBackgroundImage(image(with: surveyImageChoice), for: .selected, barMetrics: .default)
         
         // USING BATELCO IMAGES
-        segmentedControlAppearance.setBackgroundImage(surveyImageChoice, for: .selected, barMetrics: .default)
+        //segmentedControlAppearance.setBackgroundImage(surveyImageChoice, for: .selected, barMetrics: .default)
         
         segmentedControlAppearance.setDividerImage(image(with: apptentiveRangeControlBorder), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
 
@@ -278,8 +279,8 @@ extension Apptentive {
         UITableView.Style.apptentive = .grouped
         
         //  USING BATELCO IMAGES
-        UIImage.apptentiveRadioButton = apptentiveRadioButton
-        UIImage.apptentiveRadioButtonSelected = surveyImageChoice
+//        UIImage.apptentiveRadioButton = apptentiveRadioButton
+//        UIImage.apptentiveRadioButtonSelected = surveyImageChoice
         
         UIColor.apptentiveInstructionsLabel = instructionsLabelColor
         UIColor.apptentiveTextInputBorder = textInputBorderColor
