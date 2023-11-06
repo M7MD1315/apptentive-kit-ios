@@ -183,6 +183,7 @@ extension Apptentive {
 
         let bundle = Bundle.apptentive
         let barTintColor =                      UIColor(hex: "#E21331")
+        let surveyImageChoice =                 UIColor(hex: "#E21331")
         guard
             let barForegroundColor =                UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder =      UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
@@ -209,8 +210,7 @@ extension Apptentive {
             let textInputPlaceholder =              UIColor(named: "textInputPlaceholder", in: bundle, compatibleWith: nil),
             let textInputBorderSelected =           UIColor(named: "textInputBorderSelected", in: bundle, compatibleWith: nil),
             let rangeNotSelectedSegmentBackground = UIColor(named: "rangeNotSelectedSegmentBackground", in: bundle, compatibleWith: nil),
-            let disclaimerColor =                   UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
-            let surveyImageChoice =                 UIColor(named: "surveyImageChoice", in: bundle, compatibleWith: nil)
+            let disclaimerColor =                   UIColor(named: "disclaimer", in: bundle, compatibleWith: nil)
             //  USING BATELCO IMAGES
             //let apptentiveRadioButton =             UIImage(named: "radio_button_inactive", in: bundle, compatibleWith: nil),
             //let surveyImageChoice =                 UIImage(named: "radio_button_active", in: bundle, compatibleWith: nil)
