@@ -9,7 +9,7 @@
 import UIKit
 
 class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextViewDelegate, SurveyViewModelDelegate, UIAdaptivePresentationControllerDelegate {
-    var theme: Apptentive.UITheme = .apptentive // Set to the desired theme
+    var theme: Apptentive.UITheme = .batelco // Set to the desired theme
     static let animationDuration = 0.30
 
     static let minLabelAttrbutes: [NSAttributedString.Key: Any] = {

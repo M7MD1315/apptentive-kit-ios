@@ -18,7 +18,7 @@ extension Apptentive {
             let barForegroundColor =                UIColor(named: "barForeground", in: bundle, compatibleWith: nil),
             let buttonTintColor =                   UIColor(named: "buttonTint", in: bundle, compatibleWith: nil),
             let apptentiveRangeControlBorder =      UIColor(named: "apptentiveRangeControlBorder", in: bundle, compatibleWith: nil),
-            let imageNotSelectedColor =             UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
+            let imageNotSelectedColor =           UIColor(named: "imageNotSelected", in: bundle, compatibleWith: nil),
             let textInputBorderColor =              UIColor(named: "textInputBorder", in: bundle, compatibleWith: nil),
             let textInputColor =                    UIColor(named: "textInput", in: bundle, compatibleWith: nil),
             let instructionsLabelColor =            UIColor(named: "instructionsLabel", in: bundle, compatibleWith: nil),
@@ -37,14 +37,13 @@ extension Apptentive {
             let dialogButtonText =                  UIColor(named: "dialogButtonText", in: bundle, compatibleWith: nil),
             let unselectedSurveyIndicatorColor =    UIColor(named: "unselectedSurveyIndicator", in: bundle, compatibleWith: nil),
             let surveyGreeting =                    UIColor(named: "surveyGreetingText", in: bundle, compatibleWith: nil),
-            let surveyImageChoice =                 UIImage(named: "radio_button_active", in: bundle, compatibleWith: nil),
+            let surveyImageChoice =                 UIColor(named: "surveyImageChoice", in: bundle, compatibleWith: nil),
             let attachmentDeleteButton =            UIColor(named: "attachmentDeleteButton", in: bundle, compatibleWith: nil),
             let error =                             UIColor(named: "apptentiveError", in: bundle, compatibleWith: nil),
             let textInputPlaceholder =              UIColor(named: "textInputPlaceholder", in: bundle, compatibleWith: nil),
             let textInputBorderSelected =           UIColor(named: "textInputBorderSelected", in: bundle, compatibleWith: nil),
             let rangeNotSelectedSegmentBackground = UIColor(named: "rangeNotSelectedSegmentBackground", in: bundle, compatibleWith: nil),
-            let disclaimerColor =                   UIColor(named: "disclaimer", in: bundle, compatibleWith: nil),
-            let apptentiveRadioButton =             UIImage(named: "radio_button_inactive", in: bundle, compatibleWith: nil)
+            let disclaimerColor =                   UIColor(named: "disclaimer", in: bundle, compatibleWith: nil)
                 
         else {
             apptentiveCriticalError("Unable to locate color asset(s).")
@@ -58,14 +57,14 @@ extension Apptentive {
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesOnLoad, for: .normal)
         segmentedControlAppearance.setTitleTextAttributes(segmentedControlTextAttributesWhenSelected, for: .selected)
         segmentedControlAppearance.setBackgroundImage(image(with: rangeNotSelectedSegmentBackground), for: .normal, barMetrics: .default)
-        segmentedControlAppearance.setBackgroundImage(surveyImageChoice, for: .selected, barMetrics: .default)
+        segmentedControlAppearance.setBackgroundImage(image(with: surveyImageChoice), for: .selected, barMetrics: .default)
         segmentedControlAppearance.setDividerImage(image(with: apptentiveRangeControlBorder), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
 
         let barTitleTextAttributes = [NSAttributedString.Key.foregroundColor: barForegroundColor, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title2)]
 
         ApptentiveNavigationController.preferredStatusBarStyle = .lightContent
 
-        UIModalPresentationStyle.apptentive = .popover
+        UIModalPresentationStyle.apptentive = .fullScreen
 
         let navigationBarAppearanceProxy = UINavigationBar.appearance(whenContainedInInstancesOf: [ApptentiveNavigationController.self])
         navigationBarAppearanceProxy.titleTextAttributes = barTitleTextAttributes
@@ -86,7 +85,7 @@ extension Apptentive {
             toolBarAppearanceProxy.scrollEdgeAppearance = toolBarAppearanceProxy.standardAppearance
         }
 
-        UIToolbar.apptentiveMode = .hiddenWhenEmpty
+        UIToolbar.apptentiveMode = .alwaysShown
 
         let buttonTitleTextAttributes = [NSAttributedString.Key.foregroundColor: barForegroundColor, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
 
@@ -126,7 +125,7 @@ extension Apptentive {
         UIColor.apptentiveUnselectedSurveyIndicatorSegment = unselectedSurveyIndicatorColor
         UIColor.apptentiveBranchedSurveyFooter = barTintColor
         UIColor.apptentiveSurveyIntroduction = surveyGreeting
-        UIColor.apptentiveImageSelected = .appRed
+        UIColor.apptentiveImageSelected = surveyImageChoice
         UIColor.apptentiveMessageCenterBackground = apptentiveGroupPrimaryColor
         UIColor.apptentiveMessageCenterComposeBoxBackground = apptentiveGroupPrimaryColor
         UIColor.apptentiveMessageCenterGreetingTitle = surveyGreeting
@@ -230,7 +229,6 @@ extension Apptentive {
         
         // USING BATELCO IMAGES
         segmentedControlAppearance.setBackgroundImage(surveyImageChoice, for: .selected, barMetrics: .default)
-        //segmentedControlAppearance.setBackgroundImage(image(with: surveyImageChoice), for: .selected, barMetrics: .default)
         
         segmentedControlAppearance.setDividerImage(image(with: apptentiveRangeControlBorder), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
 
