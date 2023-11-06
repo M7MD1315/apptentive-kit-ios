@@ -518,8 +518,8 @@ class SurveyViewController: UITableViewController, UITextFieldDelegate, UITextVi
             if let firstInvalidQuestionIndex = self.viewModel.invalidQuestionIndexes.min() {
                 UIAccessibility.post(notification: .layoutChanged, argument: self.tableView.headerView(forSection: firstInvalidQuestionIndex))
             }
+            scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: scrollView.contentOffset.y + 1), animated: true)
         }
-        scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: scrollView.contentOffset.y + 1), animated: true)
     }
 
     // MARK: - Survey View Model Delegate
